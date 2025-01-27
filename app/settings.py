@@ -106,21 +106,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
 LANGUAGE_CODE = 'pt-BR'
-
 TIME_ZONE = 'America/Recife'
-
 USE_I18N = True
-
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # pasta onde ficam arquivos media
-MEDIA_URL = '/media/' # url de arquivos media
+STATIC_URL = 'static/'                          # URL dos staticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/') # pasta dos staticos
+                          
+MEDIA_URL = '/media/'                           # url de arquivos media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')    # pasta onde ficam arquivos media
 
 
 # Default primary key field type
